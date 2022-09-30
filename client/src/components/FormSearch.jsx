@@ -22,7 +22,7 @@ const FormSearch = ({ btnText, style = null }) => {
 
         UserApi.getLocation(lat, lng)
           .then((res) => {
-            setForm({ ...form, pickup: res.data.address.city })
+            setForm({ ...form, pickup: res.data.address.town })
           })
           .catch((err) => {
             global.setAlert({
