@@ -72,7 +72,7 @@ const Dashboard = () => {
         UserApi.getLocation(lat, lng)
           .then((res) => {
             setLocation({
-              city: res.data.address.city,
+              city: res.data.address.town,
               country: res.data.address.country,
             })
           })
